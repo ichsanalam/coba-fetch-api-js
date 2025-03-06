@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicoding Notes API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Dicoding Notes API</h1>
+        </header>
+
+        <main>
+            <!-- Form Create Note -->
+            <section class="create-note">
+                <form method="POST" id="input-form">
+                    <h2>Create New Note</h2>
+                    <input class="input-title" type="text" placeholder="Title" required>
+                    <textarea class="input-body" placeholder="Write your note here..." required></textarea>
+                    <button type="submit" class="submit-create">Add Note</button>
+                </form>
+            </section>
+
+            <!-- Notes List -->
+            <section class="note-list">
+                <div class="wrapper">
+                    <!-- Search Section -->
+                    <div class="search">
+                        <input class="input-search" type="text" placeholder="Search here...">
+                        <button class="submit-btn">Search</button>
+                    </div>
+                    <div class="dropdown-container">
+                        <select class="dropdown" id="notesDropdown">
+                            <option value="notes">Notes</option>
+                            <option value="archived">Archived Notes</option>
+                        </select>
+                    </div>
+                </div>
+                <h2 id="list-title">List Notes</h2>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Dicoding Notes API</p>
+        </footer>
+
+        <script type="module" src="main.js"></script>
+    </div>
+
+</body>
+
+</html>

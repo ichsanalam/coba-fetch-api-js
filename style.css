@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #003092;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Form Create Note */
+#input-form {
+    margin: 20px auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-title, .input-body {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.input-body {
+    height: 100px;
+    resize: none;
+}
+
+.submit-create {
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #003092;
+    color: white;
+    font-size: 16px;
+}
+
+.submit-create:hover {
+    background-color: #0055A4;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Search Section */
+.search {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+    flex: 1;
+}
+
+.search .input-search {
+    padding: 12px;
+    width: 45%;
+}
+
+.submit-btn {
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3674B5;
+    color: white;
+}
+
+.dropdown-container {
+    width: 200px;
+}
+
+.dropdown {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    background-color: white;
+    cursor: pointer;
+}
+
+.note-list {
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card-list {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    box-shadow: 1px 1px 10px #7373737b;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 5px solid #003092;
+    position: relative;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.archive-btn {
+    background: #FF9800;
+}
+
+.delete-btn {
+    background: #E53935;
+}
+
+.unarchive-btn {
+    background: #4CAF50;
+}
+
+footer {
+    background-color: #003092;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+#list-title {
+    transition: opacity 0.2s ease-in-out;
+}
+
